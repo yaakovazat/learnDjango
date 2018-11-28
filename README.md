@@ -16,3 +16,9 @@ source venv/bin/activate
 
 ## Django
 
+``` python
+pip install django
+```
+
+![image-20181128215414691](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128215414691.png)
+
