@@ -103,5 +103,13 @@ Django 里的 模型是一种特殊的对象,它保存在数据库当中.
 python manage.py startapp blog
 ```
 
+![image-20181128222731616](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128222731616.png)
+
+![image-20181128222745813](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128222745813.png)
+
+创建完了 app 以后我们还需要告诉Django 需要使用它.我们在 settings 中添加它
+
+![image-20181128222912397](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128222912397.png)
+
 
 
