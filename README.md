@@ -14,11 +14,19 @@ python3.7 -m venv venv
 source venv/bin/activate
 ```
 
-## Django
+### Django
 
 ``` python
 pip install django
 ```
 
-![image-20181128215414691](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128215414691.png)
+![image-20181128215414691](https://ws4.sinaimg.cn/large/006tNbRwgy1fxo7s72gzbj315205qmyc.jpg)
+
+### 第一个 Django 项目
+
+```python
+django-admin startproject demo .
+```
+
+![image-20181128215725332](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128215725332.png)
 
