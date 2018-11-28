@@ -28,5 +28,11 @@ pip install django
 django-admin startproject demo .
 ```
 
-![image-20181128215725332](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128215725332.png)
+![image-20181128215904111](https://ws1.sinaimg.cn/large/006tNbRwgy1fxo7x7u34bj30qo0cwq3v.jpg)
+
+Django-admin.py 是一个脚本,将自动给我们创建目录和文件. 这里是我的文件目录情况.
+
+### 更改设置
+
+从 [wikipedia timezones list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) 找到自己对应地区的时区 (TZ). 并填写到 settings.py
 
