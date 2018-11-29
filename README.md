@@ -55,7 +55,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 python manage.py migrate
 ```
 
-![image-20181128220701815](/Users/yaakovazat/Library/Application%20Support/typora-user-images/image-20181128220701815.png)
+![image-20181128220701815](https://ws2.sinaimg.cn/large/006tNbRwgy1fxor56b2l1j31200k842r.jpg)
 
 ### 启动内置服务器
 
@@ -63,7 +63,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-![image-20181128220805744](/Users/yaakovazat/Library/Application%20Support/typora-user-images/image-20181128220805744.png)
+![image-20181128220805744](https://ws1.sinaimg.cn/large/006tNbRwgy1fxor5127psj30yi09kjss.jpg)
 
 ![image-20181128220844901](https://ws4.sinaimg.cn/large/006tNbRwgy1fxor44zf85j31200k842r.jpg)
 
@@ -109,7 +109,7 @@ python manage.py startapp blog
 
 创建完了 app 以后我们还需要告诉Django 需要使用它.我们在 settings 中添加它
 
-![image-20181128222912397](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128222912397.png)
+![image-20181128222912397](https://ws4.sinaimg.cn/large/006tNbRwgy1fxor4t9xtbj30ua0c63zv.jpg)
 
 ### 创建一个博客文章模型
 
