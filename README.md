@@ -167,3 +167,32 @@ def publish(self) :又怎样呢,这正是我们之前提到的 publish 的方法
 python manage.py makemigrations blog
 ```
 
+![image-20181129091031737](https://ws1.sinaimg.cn/large/006tNbRwgy1fxorepkw0uj30wk068wff.jpg)
+
+似乎我们通过这个方法已经将我们的模型 Post  保存到了数据库当中.
+
+Django 会为我们准备好我们必须用到数据库的迁移文件,这里我们只需要做一`次 	`migrate` 操作即可.
+
+``` python
+python manage.py migrate blog
+```
+
+![image-20181129091244213](https://ws4.sinaimg.cn/large/006tNbRwgy1fxoreqwqhqj30wk068wff.jpg)
+
+这样一来,我们的post 模型已经在数据库里面了!!!
+
+### Django admin
+
+这里我们从默认的 Django admin 开始讲.
+
+在这里我们首先将使用 Django admin 编辑和删除我们的帖子.
+
+让我们打开 blog/admin.py 文件编写其中的内容如下:
+
+``` python
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+```
+
