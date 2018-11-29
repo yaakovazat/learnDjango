@@ -111,5 +111,48 @@ python manage.py startapp blog
 
 ![image-20181128222912397](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128222912397.png)
 
+### 创建一个博客文章模型
+
+我们在 blog/models.py 中定义所有的 models 对象.我们打开 models.py 删除原来的内容并且填写如下信息:
+
+``` python
+from django.db import models
+from django.utils import timezone
+# Create your models here.
+
+class Post(models.Model):
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateField(
+        default=timezone.now
+    )
+    published_date =models.DateField(
+        blank=True, null=True
+    )
 
 
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.title
+```
+
+所有 以 `from` 或者`import` 开始的地方,都是从其他文件中添加一些内容.所以跟复制粘贴就是一样的.
+
+class Post(models.Model): 这一行是用来定义我们的一个模型(这是一个`对象`)
+
+* class 是一个特殊的关键字,表明我们在定义一个对象
+* Post 是我们的模型的一个名字,我们可以给他去任何一个我们想要的名字,但是比我们必须避免使用特殊字符或者空格.总是以首字母大学来作为类的名字.
+* models.Model 表明 post 是一个 Django 模型. 所以 Django 知道它应该保存在数据库中,
+
+现在我么定义了我们曾经提到的那些属性. `title` ,`text` , `created_date`, `published_date` ,和'author'. 为了做到那样我们需要为我们的每一个字段定义一个类型,告诉电脑, 他是文本么? 是数字吗? 是日期? 到另一个对象的关联,比如用户吗?
+
+* models.Charfield 这是你如何用位数邮箱的字符来定义个文本
+* models.TextField 这是没有长度限制的文本. 这听起来用在博客文章的内容是挺适合的.
+* models.DateTimeField 这是日期和时间
+* models.ForeignKey 这是指向另一个模型的链接.
+
+def publish(self) :又怎样呢,这正是我们之前提到的 publish 的方法. def 表明这是一个函数或者方法, publish 是这个方法的名字,命名的规则是小写字母加下划线,而且一般都是以小写字母开始.
