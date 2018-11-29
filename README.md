@@ -55,7 +55,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 python manage.py migrate
 ```
 
-![image-20181128220701815](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128220701815.png)
+![image-20181128220701815](/Users/yaakovazat/Library/Application%20Support/typora-user-images/image-20181128220701815.png)
 
 ### 启动内置服务器
 
@@ -63,9 +63,9 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-![image-20181128220805744](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128220805744.png)
+![image-20181128220805744](/Users/yaakovazat/Library/Application%20Support/typora-user-images/image-20181128220805744.png)
 
-![image-20181128220844901](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128220844901.png)
+![image-20181128220844901](https://ws4.sinaimg.cn/large/006tNbRwgy1fxor44zf85j31200k842r.jpg)
 
 ### Django 模型:对象
 
@@ -103,9 +103,9 @@ Django 里的 模型是一种特殊的对象,它保存在数据库当中.
 python manage.py startapp blog
 ```
 
-![image-20181128222731616](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128222731616.png)
+![image-20181128222731616](https://ws1.sinaimg.cn/large/006tNbRwgy1fxor479wllj30s600saa8.jpg)
 
-![image-20181128222745813](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181128222745813.png)
+![image-20181128222745813](https://ws3.sinaimg.cn/large/006tNbRwgy1fxor47wtbdj315b0u00xw.jpg)
 
 创建完了 app 以后我们还需要告诉Django 需要使用它.我们在 settings 中添加它
 
