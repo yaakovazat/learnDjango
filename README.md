@@ -196,3 +196,33 @@ from .models import Post
 admin.site.register(Post)
 ```
 
+正如你看见,为了让我们的模型在 admin 页面可见,我们需要使用 ` admin.site.register(Post)` 来注册我们的模型 .
+
+现在让我们启动我们的 server 看一下情况.
+
+![image-20181129092131363](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181129092131363.png)
+
+为了管理网站,我们需要创建一个超级用户.
+
+方法如下:
+
+``` python manage.py createsuperuser ```
+
+![image-20181129092406908](/Users/yaakovazat/Library/Application Support/typora-user-images/image-20181129092406908.png)
+
+这段过程貌似长成这样.
+
+现在让我们重新启动 Django admin 页面,登录试试.
+
+![image-20181129092545618](https://ws3.sinaimg.cn/large/006tNbRwgy1fxorx6ou97j31rm0r6dim.jpg)
+
+好像我们已经成功了,貌似这个界面有些丑,但是还可以接受.
+
+让我们先发布几篇文章试试吧.
+
+![image-20181129093105927](https://ws4.sinaimg.cn/large/006tNbRwgy1fxorx72wmmj31ks0u00x7.jpg)
+
+我们已经通过 Django admin 创建了几篇文章,现在我们的 Django admin 是长这样的.
+
+###  部署
+
