@@ -156,3 +156,14 @@ class Post(models.Model): 这一行是用来定义我们的一个模型(这是�
 * models.ForeignKey 这是指向另一个模型的链接.
 
 def publish(self) :又怎样呢,这正是我们之前提到的 publish 的方法. def 表明这是一个函数或者方法, publish 是这个方法的名字,命名的规则是小写字母加下划线,而且一般都是以小写字母开始.
+
+方法通常会 `return` 一些东西.例如在我们的 `__str__`方法中就有这个.在这种情况之下,我们调用`__str__()`我们 将得到文章标题的文本.(字符串)
+
+### 在数据库中为模型创建数据表.
+
+在从这里的最后一步是让 Django 将我们的新的模型添加到数据表.我们需要先让 Django 知道我们的模型已经有了变化.
+
+``` python
+python manage.py makemigrations blog
+```
+
